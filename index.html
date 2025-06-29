@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXORATECH - Scalable Web Development, AI Integration & Digital Automation</title>
+    <meta name="description" content="Trusted U.S. Tech Partner for building websites, bots, AI, payment systems & scalable automations">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="NEXORATECH">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="NEXORATECH">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23667eea;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23764ba2;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='192' height='192' fill='url(%23grad)' rx='20'/%3E%3Ctext x='96' y='110' font-family='Inter,sans-serif' font-size='32' font-weight='700' text-anchor='middle' fill='white'%3ENXT%3C/text%3E%3Ccircle cx='50' cy='50' r='8' fill='white' opacity='0.8'/%3E%3Ccircle cx='142' cy='50' r='6' fill='white' opacity='0.6'/%3E%3Ccircle cx='50' cy='142' r='6' fill='white' opacity='0.6'/%3E%3Ccircle cx='142' cy='142' r='8' fill='white' opacity='0.8'/%3E%3C/svg%3E">
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your browsing experience and analyze our traffic. By continuing to use our site, you consent to our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button onclick="acceptCookies()" class="btn-accept">Accept All</button>
+                <button onclick="declineCookies()" class="btn-decline">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>NEXORATECH</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">NEXORATECH</h1>
+                <p class="hero-subtitle">Scalable Web Development, AI Integration & Digital Automation</p>
+                <p class="hero-description">Trusted U.S. Tech Partner for building websites, bots, AI, payment systems & scalable automations</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('contact')">Request Quote</button>
+                    <button class="btn-secondary" onclick="scrollToSection('services')">View Services</button>
+                    <button class="btn-secondary" onclick="scrollToSection('contact')">Contact Us</button>
+                </div>
+                <div class="pwa-notice">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>📱 Install our app for instant access to all services!</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-laptop">
+                    <div class="laptop-screen">
+                        <div class="code-lines">
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                            <div class="code-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="neural-network">
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="connection"></div>
+                    </div>
+                    <div class="dashboard-widget">
+                        <div class="widget-header"></div>
+                        <div class="widget-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Premium Development & Digital Solutions with Proven Results</p>
+
+            <div class="services-grid">
+                <div class="service-card premium">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Landing Pages & Websites</h3>
+                    <p>High-converting adaptive landing pages, creative commercial sites, and professional corporate websites optimized for maximum conversions.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">🎯 Conversion Optimized</span>
+                        <span class="feature-tag">📱 Mobile-First</span>
+                        <span class="feature-tag">⚡ Fast Loading</span>
+                    </div>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Websites Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                    <button class="portfolio-btn" onclick="openPortfolioLink('landing')">
+                        <i class="fas fa-eye"></i> View Portfolio
+                    </button>
+                </div>
+
+                <div class="service-card premium">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce Solutions</h3>
+                    <p>Professional online stores, product catalogs, and marketplace integrations using Shopify, WooCommerce, and custom platforms.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">💳 Payment Ready</span>
+                        <span class="feature-tag">📊 Analytics</span>
+                        <span class="feature-tag">🔒 Secure</span>
+                    </div>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Stores Launched</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$2M+</span>
+                            <span class="stat-label">Revenue Generated</span>
+                        </div>
+                    </div>
+                    <button class="portfolio-btn" onclick="openPortfolioLink('ecommerce')">
+                        <i class="fas fa-eye"></i> View Portfolio
+                    </button>
+                </div>
+
+                <div class="service-card premium">
+                    <div class="service-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>Telegram Bots & Software</h3>
+                    <p>Intelligent Telegram bots, CRM systems, data parsers, and custom API integrations for business automation and growth.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">🤖 AI Powered</span>
+                        <span class="feature-tag">🔗 API Integration</span>
+                        <span class="feature-tag">📈 Scalable</span>
+                    </div>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Bots Created</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Uptime</span>
+                        </div>
+                    </div>
+                    <button class="portfolio-btn" onclick="openPortfolioLink('bots')">
+                        <i class="fas fa-eye"></i> View Portfolio
+                    </button>
+                </div>
+
+                <div class="service-card premium">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Creative Design & Advertising</h3>
+                    <p>Professional creatives, banners, social media visuals, and advertising materials optimized for all digital platforms and campaigns.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">🎨 Custom Design</span>
+                        <span class="feature-tag">📱 Multi-Platform</span>
+                        <span class="feature-tag">🎯 Ad Optimized</span>
+                    </div>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Creatives Made</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3.5x</span>
+                            <span class="stat-label">Avg CTR Increase</span>
+                        </div>
+                    </div>
+                    <button class="portfolio-btn" onclick="openPortfolioLink('creative')">
+                        <i class="fas fa-eye"></i> View Portfolio
+                    </button>
+                </div>
+
+                <div class="service-card premium">
+                    <div class="service-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Payment System Integration</h3>
+                    <p>Secure payment processing solutions including Stripe, PayPal, Revolut, and ACH integrations with full compliance and security.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">🔒 PCI Compliant</span>
+                        <span class="feature-tag">🌍 Global</span>
+                        <span class="feature-tag">⚡ Instant Setup</span>
+                    </div>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Uptime</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">0%</span>
+                            <span class="stat-label">Chargeback Rate</span>
+                        </div>
+                    </div>
+                    <button class="portfolio-btn" onclick="openPortfolioLink('payments')">
+                        <i class="fas fa-eye"></i> View Portfolio
+                    </button>
+                </div>
+
+                <div class="service-card premium">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Business Automation</h3>
+                    <p>Custom automation solutions, workflow optimization, and system integrations to reduce manual work and increase operational efficiency.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">⚙️ Custom Built</span>
+                        <span class="feature-tag">📊 Data Driven</span>
+                        <span class="feature-tag">🔄 24/7 Running</span>
+                    </div>
+                    <div class="service-stats">
+                        <div class="stat">
+                            <span class="stat-number">80%</span>
+                            <span class="stat-label">Time Saved</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">99%</span>
+                            <span class="stat-label">Accuracy Rate</span>
+                        </div>
+                    </div>
+                    <button class="portfolio-btn" onclick="openPortfolioLink('automation')">
+                        <i class="fas fa-eye"></i> View Portfolio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Marketing Section -->
+    <section id="marketing" class="marketing">
+        <div class="container">
+            <h2 class="section-title">📈 Digital Marketing & Traffic Solutions</h2>
+            <p class="section-subtitle">Professional advertising campaigns and traffic generation across all major platforms</p>
+
+            <div class="marketing-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="advertising">Advertising Setup</button>
+                    <button class="tab-btn" data-tab="telegram">Telegram Marketing</button>
+                    <button class="tab-btn" data-tab="analytics">Analytics & Optimization</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-panel active" id="advertising">
+                        <div class="marketing-grid">
+                            <div class="marketing-card">
+                                <div class="marketing-icon">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <h4>Google Ads Management</h4>
+                                <p>Search, Display, YouTube campaigns with advanced targeting and conversion tracking</p>
+                                <ul>
+                                    <li>Keyword Research & Optimization</li>
+                                    <li>Ad Copy Creation & A/B Testing</li>
+                                    <li>Conversion Tracking Setup</li>
+                                    <li>Budget Optimization</li>
+                                </ul>
+                            </div>
+
+                            <div class="marketing-card">
+                                <div class="marketing-icon">
+                                    <i class="fab fa-meta"></i>
+                                </div>
+                                <h4>Meta Ads (Facebook & Instagram)</h4>
+                                <p>Complete Meta advertising setup with pixel integration and retargeting campaigns</p>
+                                <ul>
+                                    <li>Pixel Setup & Custom Events</li>
+                                    <li>Lookalike Audiences</li>
+                                    <li>Dynamic Product Ads</li>
+                                    <li>Retargeting Funnels</li>
+                                </ul>
+                            </div>
+
+                            <div class="marketing-card">
+                                <div class="marketing-icon">
+                                    <i class="fab fa-tiktok"></i>
+                                </div>
+                                <h4>TikTok & X (Twitter) Ads</h4>
+                                <p>Modern social media advertising with viral content strategies and engagement optimization</p>
+                                <ul>
+                                    <li>Video Creative Production</li>
+                                    <li>Trending Content Strategy</li>
+                                    <li>Influencer Collaborations</li>
+                                    <li>Engagement Campaigns</li>
+                                </ul>
+                            </div>
+
+                            <div class="marketing-card">
+                                <div class="marketing-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h4>Automated Campaign Management</h4>
+                                <p>AI-powered ad optimization, auto-bidding, and performance monitoring systems</p>
+                                <ul>
+                                    <li>Auto-Testing & Optimization</li>
+                                    <li>Bid Strategy Automation</li>
+                                    <li>Performance Alerts</li>
+                                    <li>ROI Maximization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="telegram">
+                        <div class="marketing-grid">
+                            <div class="marketing-card">
+                                <div class="marketing-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <h4>Telegram Ads & Promotion</h4>
+                                <p>Professional Telegram advertising campaigns and channel promotion strategies</p>
+                                <ul>
+                                    <li>Channel Setup & Optimization</li>
+                                    <li>Sponsored Posts Management</li>
+                                    <li>Cross-Promotion Networks</li>
+                                    <li>Subscriber Growth Campaigns</li>
+                                </ul>
+                            </div>
+
+                            <div class="marketing-card">
+                                <div class="marketing-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4>Community Building</h4>
+                                <p>Building engaged Telegram communities and managing active user interaction</p>
+                                <ul>
+                                    <li>Community Strategy</li>
+                                    <li>Engagement Campaigns</li>
+                                    <li>Moderator Training</li>
+                                    <li>Growth Hacking</li>
+                                </ul>
+                            </div>
+
+                            <div class="marketing-card">
+                                <div class="marketing-icon">
+                                    <i class="fas fa-envelope-bulk"></i>
+                                </div>
+                                <h4>Direct Outreach Campaigns</h4>
+                                <p>Compliant direct messaging campaigns and targeted user acquisition strategies</p>
+                                <ul>
+                                    <li>Targeted User Research</li>
+                                    <li>Message Template Creation</li>
+                                    <li>Compliance Monitoring</li>
+                                    <li>Response Rate Optimization</li>
+                                </ul>
+                            </div>
+
+                            <div class="marketing-card">
+                                <div class="marketing-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h4>Telegram Bot Promotion</h4>
+                                <p>Strategic promotion and user acquisition for Telegram bots and mini-apps</p>
+                                <ul>
+                                    <li>Bot Store Optimization</li>
+                                    <li>Viral Feature Development</li>
+                                    <li>User Onboarding Funnels</li>
+                                    <li>Retention Campaigns</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="analytics">
+                        <div class="marketing-grid">
+                            <div class="marketing-card">
+                                <div class="marketing-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h4>Advanced Analytics Setup</h4>
+                                <p>Comprehensive tracking and analytics implementation across all marketing channels</p>
+                                <ul>
+                                    <li>Google Analytics 4 Setup</li>
+                                    <li>Conversion Tracking</li>
+                                    <li>Custom Dashboard Creation</li>
+                                    <li>Attribution Modeling</li>
+                                </ul>
+                            </div>
+
+                            <div class="marketing-card">
+                                <div class="marketing-icon">
+                                    <i class="fas fa-target"></i>
+                                </div>
+                                <h4>Retargeting Campaigns</h4>
+                                <p>Sophisticated retargeting funnels to maximize conversion rates and customer lifetime value</p>
+                                <ul>
+                                    <li>Pixel Implementation</li>
+                                    <li>Audience Segmentation</li>
+                                    <li>Dynamic Ad Creation</li>
+                                    <li>Cross-Platform Tracking</li>
+                                </ul>
+                            </div>
+
+                            <div class="marketing-card">
+                                <div class="marketing-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h4>AI-Powered Optimization</h4>
+                                <p>Machine learning algorithms for campaign optimization and performance prediction</p>
+                                <ul>
+                                    <li>Predictive Analytics</li>
+                                    <li>Automated A/B Testing</li>
+                                    <li>Smart Bidding Strategies</li>
+                                    <li>Performance Forecasting</li>
+                                </ul>
+                            </div>
+
+                            <div class="marketing-card">
+                                <div class="marketing-icon">
+                                    <i class="fas fa-sync"></i>
+                                </div>
+                                <h4>Campaign Optimization</h4>
+                                <p>Continuous campaign monitoring and optimization for maximum ROI and performance</p>
+                                <ul>
+                                    <li>Real-time Monitoring</li>
+                                    <li>Performance Alerts</li>
+                                    <li>Budget Redistribution</li>
+                                    <li>ROI Maximization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marketing-cta">
+                <h3>Ready to Scale Your Business?</h3>
+                <p>Get a free consultation and custom marketing strategy for your business</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="window.open('https://wa.me/15614181999', '_blank')">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Consultation
+                    </button>
+                    <button class="btn-secondary" onclick="window.open('https://t.me/nexoratechllc', '_blank')">
+                        <i class="fab fa-telegram"></i> Telegram Portfolio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About NEXORATECH</h2>
+                    <p class="about-description">
+                        NEXORATECH is a registered LLC in the United States, operating fully in compliance with U.S. business regulations. 
+                        Our mission is to empower individuals and businesses with scalable digital solutions that drive growth and innovation.
+                    </p>
+                    <div class="company-credentials">
+                        <div class="credential-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Registered LLC in the United States</span>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fas fa-shield-check"></i>
+                            <span>Fully compliant with U.S. business regulations</span>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fas fa-globe-americas"></i>
+                            <span>Licensed to operate globally</span>
+                        </div>
+                    </div>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Trust & Security</h4>
+                            <p>We prioritize data security and maintain the highest standards of confidentiality.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-user-shield"></i>
+                            <h4>Privacy First</h4>
+                            <p>Your privacy is paramount. We follow strict privacy policies and GDPR compliance.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-balance-scale"></i>
+                            <h4>Ethics & Integrity</h4>
+                            <p>We operate with transparency and maintain ethical business practices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Support Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to start your next project? Contact us today!</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telegram</h4>
+                            <a href="https://t.me/nexoratechllc" target="_blank">@nexoratechllc</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/15614181999" target="_blank">+1 (561) 418-1999</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:support@nxtchllc.com">support@nxtchllc.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="New contact from NEXORATECH website">
+                        <input type="hidden" name="_next" value="https://nexoratech.com/thank-you">
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 NEXORATECH LLC. All rights reserved. Registered in Florida, USA.</p>
+                <p>Compliance: PCI-DSS, GDPR, CCPA.</p>
+                <p>
+                   <a href="#" onclick="showTermsRefundDispute()">Terms of Refund & Dispute</a> | 
+                   <a href="#" onclick="showPrivacyPolicy()">Privacy Policy</a> | 
+                   <a href="#" onclick="showBillingRefundPolicy()">Billing</a>
+                </p>
+                <p>Contact us: <a href="mailto:support@nxtchllc.com">support@nxtchllc.com</a></p>
+                <p>Follow us on: <a href="https://t.me/nexoratechllc" target="_blank">Telegram</a> | <a href="https://wa.me/15614181999" target="_blank">WhatsApp</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Legal Modals -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Privacy Policy</h2>
+            <div class="modal-text">
+                <p>Last updated: June 2025</p>
+
+                <p>At NEXORATECH LLC, we are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy explains how we collect, use, and protect your personal data when you use our services.</p>
+
+                <h3>Information We Collect</h3>
+                <p>We collect personal data that you provide directly to us when you use our services, such as your name, email address, payment information, and other contact details. We may also collect certain data automatically, including your IP address, browser type, and other usage information to improve your experience.</p>
+
+                <h3>How We Use Your Information</h3>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li>Process payments and complete transactions.</li>
+                    <li>Provide, maintain, and improve our services.</li>
+                    <li>Prevent fraud and ensure compliance with financial regulations.</li>
+                    <li>Communicate with you regarding services, payments, and support.</li>
+                </ul>
+
+                <h3>Information Sharing</h3>
+                <p>We do not sell, rent, or share your personal information with third parties, except in the following cases:</p>
+                <ul>
+                    <li>When required by law, or to comply with legal processes.</li>
+                    <li>With our trusted payment partners (e.g., Stripe, PayPal, banks), but only for the purposes of processing payments and verifying your identity.</li>
+                    <li>To protect our rights or in case of a legal dispute.</li>
+                </ul>
+
+                <h3>Data Protection and Security</h3>
+                <p>We use industry-standard security measures to protect your personal information. All payment transactions are processed securely through PCI-DSS-compliant payment gateways. We use SSL encryption to protect data during transmission.</p>
+
+                <h3>Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access, correct, or delete your personal data.</li>
+                    <li>Request that we stop processing your personal data.</li>
+                    <li>Withdraw consent for the collection and use of your data (where applicable).</li>
+                </ul>
+                <p>To exercise any of these rights, please contact us at <a href="mailto:support@nxtchllc.com">support@nxtchllc.com</a>.</p>
+
+                <h3>Data Retention</h3>
+                <p>We retain your personal data only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law. If you request deletion of your data, we will process the request in accordance with applicable regulations.</p>
+
+                <h3>Third-Party Services</h3>
+                <p>We may use third-party service providers to help us operate our business and deliver services. These third parties are obligated to keep your data confidential and secure. We only share personal information necessary for them to perform services on our behalf.</p>
+
+                <h3>Changes to This Privacy Policy</h3>
+                <p>We reserve the right to update this Privacy Policy at any time. Any changes will be posted on this page with an updated "Last Updated" date. Please review this page periodically to stay informed about how we are protecting your data.</p>
+
+                <h3>Contact Us</h3>
+                <p>If you have any questions or concerns about this Privacy Policy, or if you wish to exercise your rights, please contact us:</p>
+                <ul>
+                    <li>Email: <a href="mailto:support@nxtchllc.com">support@nxtchllc.com</a></li>
+                    <li>Phone: +1 (561) 418-1999</li>
+                    <li>Telegram: <a href="https://t.me/nexoratechllc" target="_blank">@nexoratechllc</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Terms of Refund & Dispute</h2>
+            <div class="modal-text">
+                <p>Last Updated: June 2025</p>
+
+                <p>All payments are final unless a refund clause is stated in the service contract. Refunds, if applicable, are processed within 7 business days. If you are not satisfied with the service provided, please contact us within 7 days of receiving the service. We will review your case and, if applicable, process a refund in accordance with the terms outlined in the service contract.</p>
+
+                <h3>Payment Methods</h3>
+                <ul>
+                    <li><strong>Credit & Debit Cards</strong>: Visa, Mastercard, Amex, Discover</li>
+                    <li><strong>Digital Wallets</strong>: Apple Pay, Google Pay, PayPal</li>
+                    <li><strong>Bank Transfers</strong>: ACH, SEPA, SWIFT, Wise, Revolut</li>
+                    <li><strong>Alternative Methods</strong>: Zelle, Cash App</li>
+                </ul>
+
+                <h3>Fraud Prevention & Payment Verification</h3>
+                <p>We reserve the right to verify all payment transactions to ensure security and compliance. Any suspicious or fraudulent activities detected will result in immediate suspension of services and legal action if necessary.</p>
+
+                <h3>Dispute Resolution</h3>
+                <p>If you wish to initiate a chargeback, please contact our support team first. We will work with you to resolve any issues promptly. If a chargeback is initiated without prior communication, we reserve the right to dispute the chargeback and suspend your account until the issue is resolved.</p>
+
+                <h3>Chargeback Policy</h3>
+                <p>Chargebacks are <strong>strongly discouraged</strong> and will be disputed in all cases where services have been rendered or agreed upon. By submitting payment, you acknowledge that any chargeback request made without a valid reason may result in the suspension of services and legal action.</p>
+
+                <h3>Custom Orders & Individual Services</h3>
+                <p>All services provided by NEXORATECH LLC are <strong>customized to fit</strong> the specific needs of each client. Once a project has started, the service is <strong>non-refundable</strong>. Clients are encouraged to review the service details and ensure their satisfaction before confirming payment.</p>
+
+                <h3>Payment Security & Fraud Prevention</h3>
+                <p>All transactions are monitored for fraudulent activity. If any fraudulent activity is detected, the transaction will be suspended, and your account may be suspended as well. We reserve the right to dispute chargebacks if they are initiated after services have been fully rendered and delivered.</p>
+
+                <h3>Contact Us</h3>
+                <p>If you have any questions regarding this Refund & Dispute Policy, please contact us:</p>
+                <ul>
+                    <li>Email: <a href="mailto:support@nxtchllc.com">support@nxtchllc.com</a></li>
+                    <li>Phone: +1 (561) 418-1999</li>
+                    <li>Telegram: <a href="https://t.me/nexoratechllc" target="_blank">@nexoratechllc</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="billingRefundModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Billing & Refund Policy</h2>
+            <div class="modal-text">
+                <p>Last updated: June 2025</p>
+
+                <h3>Payment Methods</h3>
+                <ul>
+                    <li>Credit & Debit Cards: Visa, Mastercard, Amex, Discover</li>
+                    <li>Digital Wallets: Apple Pay, Google Pay, PayPal</li>
+                    <li>Bank Transfers: ACH, SEPA, SWIFT, Wise, Revolut</li>
+                    <li>Alternative Methods: Zelle, Cash App</li>
+                </ul>
+
+                <h3>Refunds</h3>
+                <p>All payments are final unless a refund clause is stated in the service contract. Refunds, if applicable, are processed within 7 business days. If you are not satisfied with the service provided, please contact us within 7 days of receiving the service. We will review your case and, if applicable, process a refund in accordance with the terms outlined in the service contract.</p>
+
+                <h3>Dispute Resolution</h3>
+                <p>If you wish to initiate a chargeback, please contact our support team first. We will work with you to resolve any issues promptly. If a chargeback is initiated without prior communication, we reserve the right to dispute the chargeback and suspend your account until the issue is resolved.</p>
+
+                <h3>Fraud Prevention & Payment Verification</h3>
+                <p>All payments undergo strict fraud detection systems. In the case of suspicious transactions, we reserve the right to review and suspend payments to prevent fraud. Fraudulent activities will result in immediate suspension and legal action.</p>
+
+                <h3>Custom Services & Individual Orders</h3>
+                <p>All services provided by NEXORATECH LLC are customized based on client needs. Once work begins on a custom order, it is considered non-refundable. Clients are encouraged to carefully review the service details and ensure their satisfaction before confirming payment.</p>
+
+                <h3>Payment Security & Fraud Prevention</h3>
+                <p>All transactions are monitored for fraudulent activity. If any fraudulent activity is detected, the transaction will be suspended, and your account may be suspended as well. We reserve the right to dispute chargebacks if they are initiated after services have been fully rendered and delivered.</p>
+
+                <h3>Contact Us</h3>
+                <p>If you have any questions regarding this Billing & Refund Policy, please contact us:</p>
+                <ul>
+                    <li>Email: <a href="mailto:support@nxtchllc.com">support@nxtchllc.com</a></li>
+                    <li>Phone: +1 (561) 418-1999</li>
+                    <li>Telegram: <a href="https://t.me/nexoratechllc">@nexoratechllc</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function showBillingRefundPolicy() {
+            document.getElementById('billingRefundModal').style.display = 'block';
+        }
+
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
